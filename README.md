@@ -53,3 +53,25 @@ print(arr[5])  # This will be logged as an error (IndexError)
 - Minimal setup required (`import kagglog` + `kagglog.enable()`).
 
 - Lightweight and easy to use.
+
+## Output log file will looks like this:
+
+```
+Exception at: 2025-10-01 15:46:44
+
+Unhandled Exception:
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/dist-packages/IPython/core/interactiveshell.py", line 3553, in run_code
+
+    exec(code_obj, self.user_global_ns, self.user_ns)
+
+  File "/tmp/ipykernel_78/2964449197.py", line 3, in <cell line: 0>
+
+    print(arr[5])  # index out of range
+
+          ~~~^^^
+
+IndexError: list index out of range
+```
